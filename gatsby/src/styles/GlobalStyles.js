@@ -70,6 +70,9 @@ const GlobalStyles = createGlobalStyle`
   * {
     box-sizing:border-box;
   }
+  ul {
+    padding-left:0;
+  }
 `;
 
 export default GlobalStyles;
