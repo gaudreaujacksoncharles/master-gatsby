@@ -1,20 +1,19 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Img from 'gatsby-image'
-import { PizzaStyles } from './styles'
+import { SinglePizzaStyles } from './styles'
 
 export default function SinglePizza({ pizza }) {
     return (
-        <PizzaStyles>
+        <SinglePizzaStyles>
             <Link to={`/pizza/${pizza.slug.current}`}>
-                <>{pizza.name}</>
-                <p>
-                    {
-                        pizza.toppings.map((topping) => topping.name).join(', ')
-                    }
-                </p>
-                <Img fluid={pizza.image.asset.fluid} alt={pizza.name} />
+              <h2>
+                <span className="mark">{pizza.name}</span>
+              </h2>
             </Link>
-        </PizzaStyles>
-    )
+            <p>{pizza.toppings.map((topping) => topping.name).join(', ')}</p>
+            <Img fluid={pizza.image.asset.fluid} alt={pizza.name} />
+        </SinglePizzaStyles>
+    );
 }
+  
