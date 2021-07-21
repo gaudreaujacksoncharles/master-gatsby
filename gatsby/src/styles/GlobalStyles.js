@@ -67,6 +67,9 @@ const GlobalStyles = createGlobalStyle`
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
   } */
+  * {
+    box-sizing:border-box;
+  }
 `;
 
 export default GlobalStyles;

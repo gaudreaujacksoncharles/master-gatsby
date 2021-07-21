@@ -13,8 +13,6 @@ export default function Logo() {
               <span className="letter i">i</span>
               <span className="letter c">c</span>
               <span className="letter k">k</span>
-              <span className="letter apos">'</span>
-              <span className="letter s">s</span>
             </span>
             <span className="slices">slices</span>
           </h1>
