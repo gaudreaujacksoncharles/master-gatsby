@@ -13,7 +13,7 @@ export default {
             description: 'What is the name of the topping?'
         },
         {
-            name: 'vegetatian',
+            name: 'vegetarian',
             title: 'Vegetarian',
             type: 'boolean',
             description: 'Do you want your pizza vegetarian?',
