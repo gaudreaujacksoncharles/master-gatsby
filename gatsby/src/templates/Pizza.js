@@ -12,9 +12,9 @@ const PizzaGrid = styled.div`
 export default function SinglePizzaPage({ data: { pizza } }) {
   return (
     <PizzaGrid>
-      <Img fluid={pizza.image.asset.fluid} />
+      <Img fluid={pizza?.image.asset.fluid} />
       <div>
-        <h2 className="mark">{pizza.name}</h2>
+        <h2 className="mark">{pizza?.name}</h2>
         <ul>
           {pizza.toppings.map((topping) => (
             <li key={topping.id}>{topping.name}</li>
@@ -41,7 +41,7 @@ export const query = graphql`
       toppings {
         name
         id
-        vegetarian
+        vegetatian
       }
     }
   }
